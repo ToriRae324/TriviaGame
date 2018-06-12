@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cat Trivia Game</title>
+
+    <!-- Stylesheets & jQuery -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+
+
+</head>
+
+<body>
+    <!-- Start Page -->
+    <div id="startPage">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <!-- Empty col -->
+                </div>
+                <div class="col-md-8" id="row1">
+                    <h1>Curious About Cats!</h1>
+                </div>
+                <div class="col-md-2">
+                    <!-- Empty col -->
+                </div>
+            </div>
+
+            <!-- Start Button -->
+            <div class="row">
+                <div class="col-md-2">
+                    <!-- Empty col -->
+                </div>
+                <div class="col-md-8">
+                    <button type="button" class="btn btn-success btn-lg" id="startButton">Let's Go!</button>
+                </div>
+                <div class="col-md-2">
+                    <!-- Empty col -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Questions Page -->
+        <div class="container" id="questionsPage">
+            <div class="row">
+                <div class="col-md-2">
+                    <!-- Empty col -->
+                </div>
+                <div class="col-md-8" id="row1">
+                    <h1>Curious About Cats!</h1>
+                </div>
+                <div class="col-md-2">
+                    <!-- Empty col -->
+                </div>
+            </div>
+
+            <!-- Time Remaining -->
+            <div class="row">
+                <div class="col-md-2">
+                    <!-- Empty col -->
+                </div>
+                <div class="col-md-8" id="timeRemaining">
+                    <h2>Time Remaining:</h2>
+                </div>
+                <div class="col-md-2">
+                    <!-- Empty col -->
+                </div>
+            </div>
+
+            <!-- Question 1 -->
+            <div class="row" id="q1">
+
+                <div class="col-md-2">
+                    <!-- Empty col -->
+                </div>
+                <div class="col-md-8">
+                    <h3>A group of cats is called a: </h3>
+
+                    <!-- Answers -->
+                    <div class="row">
+
+                        <div class="col-md-12">
+                            <form>
+                                <div>
+                                    <input type="radio" id="q1a1" name="q1" value="correct">
+                                    <label for="q1a1">clowder</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="q1a2" name="q1" value="incorrect">
+                                    <label for="q1a2">murder</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="q1a3" name="q1" value="incorrect">
+                                    <label for="q1a3">cauldron</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="q1a4" name="q1" value="incorrect">
+                                    <label for="q1a4">clan</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-2">
+                    <!-- Empty col -->
+                </div>
+
+
+            </div>
+
+            <!-- Question 2 -->
+            <div class="row" id="q2">
+
+                <div class="col-md-2">
+                    <!-- Empty col -->
+                </div>
+                <div class="col-md-8">
+                    <h3>Cats can make about ___ different sounds</h3>
+
+                    <!-- Answers -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form>
+                                <div>
+                                    <input type="radio" id="q2a1" name="q2" value="incorrect">
+                                    <label for="q2a1">50</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="q2a2" name="q2" value="correct">
+                                    <label for="q2a2">100</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="q2a3" name="q2" value="incorrect">
+                                    <label for="q2a3">20</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="q2a4" name="q2" value="incorrect">
+                                    <label for="q2a4">150</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-2">
+                    <!-- Empty col -->
+                </div>
+
+            </div>
+
+            <!-- Question 3 -->
+            <div class="row" id="q3">
+
+                <div class="col-md-2">
+                    <!-- Empty col -->
+                </div>
+                <div class="col-md-8">
+                    <h3>A cat can jump up to ___ times its own height</h3>
+
+                    <!-- Answers -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form>
+                                <div>
+                                    <input type="radio" id="q3a1" name="q3" value="incorrect">
+                                    <label for="q3a1">2x</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="q3a2" name="q3" value="incorrect">
+                                    <label for="q3a2">7x</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="q3a3" name="q3" value="correct">
+                                    <label for="q3a3">5x</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="q3a4" name="q3" value="incorrect">
+                                    <label for="q3a4">10x</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-2">
+                    <!-- Empty col -->
+                </div>
+
+            </div>
+
+            <!-- Question 4 -->
+            <div class="row" id="q4">
+
+                <div class="col-md-2">
+                    <!-- Empty col -->
+                </div>
+                <div class="col-md-8">
+                    <h3>A cat usually has about ___ whiskers on each side of its face.</h3>
+
+                    <!-- Answers -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form>
+                                <div>
+                                    <input type="radio" id="q4a1" name="q4" value="correct">
+                                    <label for="q4a1">12</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="q4a2" name="q4" value="incorrect">
+                                    <label for="q4a2">6</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="q4a3" name="q4" value="incorrect">
+                                    <label for="q4a3">20</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="q4a4" name="q4" value="incorrect">
+                                    <label for="q4a4">10</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-2">
+                    <!-- Empty col -->
+                </div>
+
+            </div>
+
+            <!-- Question 5 -->
+            <div class="row" id="q5">
+                <div class="col-md-2">
+                    <!-- Empty col -->
+                </div>
+                <div class="col-md-8">
+                    <h3>A female cat is called a:</h3>
+
+                    <!-- Answers -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form>
+                                <div>
+                                    <input type="radio" id="q5a1" name="q5" value="incorrect">
+                                    <label for="q5a1">lady</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="q5a2" name="q5" value="incorrect">
+                                    <label for="q5a2">duchess</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="q5a3" name="q5" value="incorrect">
+                                    <label for="q5a3">sheba</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="q5a4" name="q5" value="correct">
+                                    <label for="q5a4">molly</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-2">
+                    <!-- Empty col -->
+                </div>
+            </div>
+        </div>
+    
+
+    <!-- Results Page -->
+    <div id="resultsPage">
+
+    </div>
+
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>

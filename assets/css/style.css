@@ -1,0 +1,36 @@
+
+body {
+    background: url("../images/nekobg.png") center;
+    height:100%;
+    text-align: center;
+    align-content: center;
+}
+
+#row1 {
+    background-color: lightslategrey;
+}
+
+.col-md-8 {
+    margin-top: 20px;
+    background-color: lightsteelblue;
+
+}
+
+#questions {
+    display: none;
+}
+
+#results {
+    display: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#timer {
+    margin-bottom: 20px;
+}
+
+#q1 , #q2, #q3, #q4, #q5 {
+    margin-bottom: 20px;
+}
+

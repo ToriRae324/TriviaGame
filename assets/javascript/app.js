@@ -1,13 +1,13 @@
 
 // Variables
-var questions = ["'q1'" , "'q2'" , "'q3'" , "'q4'" , "'q5'"]
+// var questions = ["'q1'" , "'q2'" , "'q3'" , "'q4'" , "'q5'"]
 var numCorrect = 0;
 var numIncorrect = 0;
 var numUnanswered = 5;
 
 
 // Timer
-var timeRemaining = 10;
+var timeRemaining = 90;
 
 function countdown(){
     timeRemaining--;
@@ -33,10 +33,8 @@ $("#startButton").on("click", function() {
     // Show Questions
     $("#questions").show();
 
-
     // Start Timer
     timer = setInterval(countdown, 1000);
-
 });
 
 // Display results page
@@ -47,22 +45,8 @@ function showResultsPage() {
     $("#results").show();
     // show evaluated results
     evaluateResults();
-
 };
 
-
-// if ($("input[name='q1']") === correctAnswers.q1) {
-//     numCorrect++;
-//     console.log(numCorrect);
-// };
-
-$( "input[name='q1']" ).on( "click", function() {
-    console.log( $( "input:checked" ).val() + " is checked!" );
-  });
-
-$( "input[name='q2']" ).on( "click", function() {
-    console.log( $( "input[name='q2']:checked" ).val() + " is checked!" );
-});
 
 
 // Evaluate results from loop

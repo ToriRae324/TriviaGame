@@ -4,6 +4,7 @@
 var numCorrect = 0;
 var numIncorrect = 0;
 var numUnanswered = 5;
+var x;
 
 
 // Timer
@@ -31,7 +32,7 @@ $("#startButton").on("click", function() {
     // Hide Start Button
     $("#start").hide();
     // Show Questions
-    $("#questions").show();
+    $("#questions").css("display", "flex");
 
     // Start Timer
     timer = setInterval(countdown, 1000);
@@ -48,7 +49,7 @@ function showResultsPage() {
     // Hide Questions
     $("#questions").hide();
     // Show Results Page
-    $("#results").show();
+    $("#results").css("display", "flex");
     // show evaluated results
     evaluateResults();
 };
@@ -58,13 +59,14 @@ function showResultsPage() {
 // Evaluate results from loop
 // function evaluateResults() {
 //     for (var i = 0; 0<questions.length; i++){
-//         if ($( '"input[name='+questions[i]+']:checked"' ).val() === "correct") {
+//         x = '$( "input[name='+questions[i]+']:checked" ).val()'
+//         if (x === "correct") {
 //             numCorrect++;
 //             numUnanswered--;
-//         } else if ($( '"input[name='+questions[i]+']:checked"' ).val() === "incorrect") {
+//         } else if (x === "incorrect") {
 //             numIncorrect++;
 //             numUnanswered--;
-//         };
+//         }
 //         console.log(numCorrect, numIncorrect, numUnanswered);
 //     };
 // }; 

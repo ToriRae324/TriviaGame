@@ -37,6 +37,12 @@ $("#startButton").on("click", function() {
     timer = setInterval(countdown, 1000);
 });
 
+// Score Me bottom > Results page
+$("#SubmitButton").on("click", function() {
+    clearInterval(timer);
+    showResultsPage();
+});
+
 // Display results page
 function showResultsPage() {
     // Hide Questions
@@ -112,8 +118,6 @@ function evaluateResults() {
     }
 
 
-    console.log(numCorrect, numIncorrect, numUnanswered);
-
     // display results text
     $("#resultsText").html(
         "<h3>Correct: " + numCorrect + "</h3>" +
@@ -122,10 +126,6 @@ function evaluateResults() {
     );
     
 }; 
-
-
-
-// Main Program
 
 
 
